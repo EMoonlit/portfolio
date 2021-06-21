@@ -2,50 +2,29 @@
 @use '../components/mixins' as *;
 
 .intro-section {
-    @include gradient;
-    padding: 10rem 0 0 0;
-    width: 100%;
-    height: 100%;
+  @include gradient;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
 }
 
 .intros {
-
-
-    .video-box {
-        position: relative;
-
-
-        a {
-            // @include absoluteCenter;
-
-            span {
-
-
-                i {
-
-                    font-size: 6rem;
-                    color: $secondary;
-
-                }
-            }
-        }
+  a {
+    text-decoration: none;
+    color: $white;
+    font-weight: 700;
+  }
+  .profile-photo {
+    position: relative;
+    img {
+      max-width:300px;
+      max-height:250px;
+      width: auto;
+      height: auto;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 15px 15px 50px rgba(0,0,0,0.2);
+      animation: morphing 5s infinite ease;
+      overflow: hidden;
     }
-}
-
-.border-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6rem;
-    height: 6rem;
-    border: 0.55rem solid $white;
-    border-radius: 50%;
-    animation: pulse-border 1.5s linear infinite;
-
-    &--border-1 {
-        animation-delay: 1s;
-    }
-    &--border-2 {
-        animation-delay: 1.5s;
-    }
+  }
 }

@@ -9,9 +9,10 @@
 
 // STYLE THE CONTACT-BOX CONTENT 
 .contact-box {
-    position: relative;
+    position: relative;  
 
     &__icon {
+      
        width: 2rem;
        stroke: $primary; 
        padding-top: 0.5rem;
@@ -70,28 +71,7 @@
 
         }
         &:hover {
-            color: $primary;
-        }
-    }
-}
-
-// STYLE THE CAMPANY INFO CONTENT 
-.campany-list {
-    display: block;
-    list-style-type: none;
-    position: relative;
-
-    li {
-        margin-bottom: 0.5rem;
-        text-decoration: none;
-
-        a {
-            color: $white;
-            text-decoration: none;
-
-            &:hover {
-                color: $primary;
-            }
+            color: $pink;
         }
     }
 }
