@@ -11076,26 +11076,12 @@ textarea.form-control-lg {
 .get-started {
   padding: 4rem 0;
   background-color: #e9ecef;
+  align-items: center;
 }
 
-.cta-info {
-  padding: 3rem;
-  margin: 1rem 0;
-}
-.cta-info__list {
-  position: relative;
-  list-style-type: none;
-  display: block;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  margin-bottom: 0.7rem;
-}
-.cta-info__list li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "";
-  font-weight: 600;
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
+.form-contact {
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
@@ -11155,20 +11141,29 @@ textarea.form-control-lg {
   }
 }
 
-.footer-sm a {
+.footer-sm {
+  justify-content: center;
+  align-items: center;
+}
+.footer-sm div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-sm div a {
   color: #fff;
 }
-.footer-sm a i {
+.footer-sm div a i {
   font-size: 1rem;
   margin-left: 1rem;
 }
 @media (min-width: 576px) {
-  .footer-sm a i {
+  .footer-sm div a i {
     font-size: 1.6rem;
   }
 }
-.footer-sm a:hover {
-  color: #d63384;
+.footer-sm div a:hover {
+  color: #00BD18;
 }
 
 .footer-bottom {
@@ -11183,7 +11178,7 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .footer-bottom__copyright a:hover {
-  color: #004509;
+  color: #00BD18;
   text-decoration: underline;
 }
 

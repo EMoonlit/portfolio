@@ -55,25 +55,35 @@
 
 // STYLE THE SOCIAL MEDIA CONTENT 
 .footer-sm {
+  justify-content: center;
+  align-items: center;
 
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
         color: $white;
-
+        
+  
         i {
             font-size: 1rem;
             margin-left: 1rem;
-
+  
             @include media-breakpoint-up(sm) {
                 font-size: 1.6rem;
                }
-
-
+  
+  
         }
         &:hover {
-            color: $pink;
+            color: $green;
         }
     }
+  }
+
+
 }
 
 // STYLE THE COPYRIGHT  CONTENT 
@@ -90,7 +100,7 @@
             text-decoration: none;
 
             &:hover {
-                color: $primary;
+                color: $green;
                 text-decoration: underline;
              
             }
